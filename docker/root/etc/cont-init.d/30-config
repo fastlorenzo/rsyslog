@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+
+# permissions
+chown -R abc:abc /config
+
+if [ ! -d /log ]; then
+  mkdir /log
+fi
+chown -R abc:abc /log
+chmod -R 750 /log
