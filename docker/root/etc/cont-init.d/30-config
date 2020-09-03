@@ -1,7 +1,9 @@
 #!/usr/bin/with-contenv bash
 
 # rename user
+deluser syslog
 usermod abc -l syslog
+delgroup syslog
 groupmod abc -n syslog
 
 # permissions
