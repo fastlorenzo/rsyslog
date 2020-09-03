@@ -1,10 +1,14 @@
 #!/usr/bin/with-contenv bash
 
+# rename user
+usermod abc -l syslog
+groupmod abc -n syslog
+
 # permissions
-chown -R abc:abc /config
+chown -R syslog:syslog /config
 
 if [ ! -d /log ]; then
   mkdir /log
 fi
-chown -R abc:abc /log
+chown -R syslog:syslog /log
 chmod -R 750 /log
