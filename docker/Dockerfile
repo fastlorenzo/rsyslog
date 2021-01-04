@@ -1,7 +1,7 @@
 FROM lsiobase/ubuntu:focal
 
 LABEL maintainer="docker@bernardi.be"
-LABEL version="0.1.1"
+LABEL version="0.1.2"
 
 ARG DEBIAN_FRONTEND="noninteractive"
 
