@@ -36,7 +36,7 @@ RUN \
 
 # add local files
 COPY root/ /
-COPY config/ /
+COPY config/ /config/
 
 VOLUME [ "/log" ]
 EXPOSE 10514 10514/udp
